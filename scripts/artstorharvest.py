@@ -78,7 +78,7 @@ def main():
         ofile = open(args.filename, 'w')
         json.dump(output, ofile)
         ofile.close()
-        print "Wrote out %d records" % total
+        print("Wrote out %d records" % total)
     else:
         projs = projs_start.json()
         projs_ids = {}
@@ -125,7 +125,7 @@ def main():
         ofile = open(args.filename, 'w')
         json.dump(output, ofile)
         ofile.close()
-        print "Wrote out %d records" % total
+        print("Wrote out %d records" % total)
 
 
 if __name__ == "__main__":
