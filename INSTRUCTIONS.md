@@ -95,7 +95,11 @@ Retrieving project Billie Jean Isbell
 ...
 ```
 
-What this script does is first query for all the unique collections in our SharedShelf instance, then iterate over each collection to grab the data. The data grabbed for each collection describes each digital object therein, and maps the SharedShelf API field from the collection-specific code to the text label for that field's code if and when that is available.
+What this script does is first query for all the unique collections in our SharedShelf instance, then iterate over each collection to grab the data. The data grabbed for each collection describes each digital object therein and pulls the json data exactly as found.
 
-This can take up to 10 minutes to run.
+This can take up to 10 minutes to run. Wait until it is complete before moving to analysis.
+
+### Analyze Your Local SharedShelf API Data dump
+
+The most basic analysis to run is to f
 

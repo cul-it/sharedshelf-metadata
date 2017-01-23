@@ -933,461 +933,7 @@ NB: fields mapped where present in API output for the collection.
                               primary_image: |====================     | 179108/221642 |  80%
                                  project_id: |=========================| 221642/221642 | 100%
                                   published: |======================   | 202696/221642 |  91%
-            publishing_status.1007.asset_id: |                         |     12/221642 |   0%
-publishing_status.1007.publishing_target_id: |                         |     12/221642 |   0%
-              publishing_status.1007.status: |                         |     12/221642 |   0%
-          publishing_status.1007.updated_by: |                         |     12/221642 |   0%
-          publishing_status.1007.updated_on: |                         |     12/221642 |   0%
-             publishing_status.101.asset_id: |                         |   1190/221642 |   0%
- publishing_status.101.publishing_target_id: |                         |   1190/221642 |   0%
-               publishing_status.101.status: |                         |   1190/221642 |   0%
-           publishing_status.101.updated_by: |                         |   1190/221642 |   0%
-           publishing_status.101.updated_on: |                         |   1190/221642 |   0%
-             publishing_status.102.asset_id: |                         |   1529/221642 |   0%
- publishing_status.102.publishing_target_id: |                         |   1529/221642 |   0%
-               publishing_status.102.status: |                         |   1529/221642 |   0%
-           publishing_status.102.updated_by: |                         |   1529/221642 |   0%
-           publishing_status.102.updated_on: |                         |   1529/221642 |   0%
-            publishing_status.1114.asset_id: |                         |   4014/221642 |   1%
-publishing_status.1114.publishing_target_id: |                         |   4014/221642 |   1%
-              publishing_status.1114.status: |                         |   4014/221642 |   1%
-          publishing_status.1114.updated_by: |                         |   4014/221642 |   1%
-          publishing_status.1114.updated_on: |                         |   4014/221642 |   1%
-            publishing_status.1131.asset_id: |                         |   2111/221642 |   0%
-publishing_status.1131.publishing_target_id: |                         |   2111/221642 |   0%
-              publishing_status.1131.status: |                         |   2111/221642 |   0%
-          publishing_status.1131.updated_by: |                         |   2111/221642 |   0%
-          publishing_status.1131.updated_on: |                         |   2111/221642 |   0%
-             publishing_status.114.asset_id: |                         |    223/221642 |   0%
- publishing_status.114.publishing_target_id: |                         |    223/221642 |   0%
-               publishing_status.114.status: |                         |    223/221642 |   0%
-           publishing_status.114.updated_by: |                         |    223/221642 |   0%
-           publishing_status.114.updated_on: |                         |    223/221642 |   0%
-             publishing_status.115.asset_id: |                         |    416/221642 |   0%
- publishing_status.115.publishing_target_id: |                         |    416/221642 |   0%
-               publishing_status.115.status: |                         |    416/221642 |   0%
-           publishing_status.115.updated_by: |                         |    416/221642 |   0%
-           publishing_status.115.updated_on: |                         |    416/221642 |   0%
-             publishing_status.116.asset_id: |                         |   2246/221642 |   1%
- publishing_status.116.publishing_target_id: |                         |   2246/221642 |   1%
-               publishing_status.116.status: |                         |   2246/221642 |   1%
-           publishing_status.116.updated_by: |                         |   2246/221642 |   1%
-           publishing_status.116.updated_on: |                         |   2246/221642 |   1%
-             publishing_status.117.asset_id: |                         |   1898/221642 |   0%
- publishing_status.117.publishing_target_id: |                         |   1898/221642 |   0%
-               publishing_status.117.status: |                         |   1898/221642 |   0%
-           publishing_status.117.updated_by: |                         |   1898/221642 |   0%
-           publishing_status.117.updated_on: |                         |   1898/221642 |   0%
-            publishing_status.1187.asset_id: |                         |   6218/221642 |   2%
-publishing_status.1187.publishing_target_id: |                         |   6218/221642 |   2%
-              publishing_status.1187.status: |                         |   6218/221642 |   2%
-          publishing_status.1187.updated_by: |                         |   6218/221642 |   2%
-          publishing_status.1187.updated_on: |                         |   6218/221642 |   2%
-            publishing_status.1235.asset_id: |                         |   1949/221642 |   0%
-publishing_status.1235.publishing_target_id: |                         |   1949/221642 |   0%
-              publishing_status.1235.status: |                         |   1949/221642 |   0%
-          publishing_status.1235.updated_by: |                         |   1949/221642 |   0%
-          publishing_status.1235.updated_on: |                         |   1949/221642 |   0%
-            publishing_status.1236.asset_id: |                         |    645/221642 |   0%
-publishing_status.1236.publishing_target_id: |                         |    645/221642 |   0%
-              publishing_status.1236.status: |                         |    645/221642 |   0%
-          publishing_status.1236.updated_by: |                         |    645/221642 |   0%
-          publishing_status.1236.updated_on: |                         |    645/221642 |   0%
-            publishing_status.1251.asset_id: |                         |    927/221642 |   0%
-publishing_status.1251.publishing_target_id: |                         |    927/221642 |   0%
-              publishing_status.1251.status: |                         |    927/221642 |   0%
-          publishing_status.1251.updated_by: |                         |    927/221642 |   0%
-          publishing_status.1251.updated_on: |                         |    927/221642 |   0%
-            publishing_status.1278.asset_id: |                         |   4231/221642 |   1%
-publishing_status.1278.publishing_target_id: |                         |   4231/221642 |   1%
-              publishing_status.1278.status: |                         |   4231/221642 |   1%
-          publishing_status.1278.updated_by: |                         |   4231/221642 |   1%
-          publishing_status.1278.updated_on: |                         |   4231/221642 |   1%
-             publishing_status.132.asset_id: |                         |    842/221642 |   0%
- publishing_status.132.publishing_target_id: |                         |    842/221642 |   0%
-               publishing_status.132.status: |                         |    842/221642 |   0%
-           publishing_status.132.updated_by: |                         |    842/221642 |   0%
-           publishing_status.132.updated_on: |                         |    842/221642 |   0%
-            publishing_status.1352.asset_id: |                         |    787/221642 |   0%
-publishing_status.1352.publishing_target_id: |                         |    787/221642 |   0%
-              publishing_status.1352.status: |                         |    787/221642 |   0%
-          publishing_status.1352.updated_by: |                         |    787/221642 |   0%
-          publishing_status.1352.updated_on: |                         |    787/221642 |   0%
-            publishing_status.1365.asset_id: |                         |    787/221642 |   0%
-publishing_status.1365.publishing_target_id: |                         |    787/221642 |   0%
-              publishing_status.1365.status: |                         |    787/221642 |   0%
-          publishing_status.1365.updated_by: |                         |    787/221642 |   0%
-          publishing_status.1365.updated_on: |                         |    787/221642 |   0%
-             publishing_status.144.asset_id: |                         |    176/221642 |   0%
- publishing_status.144.publishing_target_id: |                         |    176/221642 |   0%
-               publishing_status.144.status: |                         |    176/221642 |   0%
-           publishing_status.144.updated_by: |                         |    176/221642 |   0%
-           publishing_status.144.updated_on: |                         |    176/221642 |   0%
-             publishing_status.145.asset_id: |                         |    176/221642 |   0%
- publishing_status.145.publishing_target_id: |                         |    176/221642 |   0%
-               publishing_status.145.status: |                         |    176/221642 |   0%
-           publishing_status.145.updated_by: |                         |    176/221642 |   0%
-           publishing_status.145.updated_on: |                         |    176/221642 |   0%
-             publishing_status.148.asset_id: |                         |    522/221642 |   0%
- publishing_status.148.publishing_target_id: |                         |    522/221642 |   0%
-               publishing_status.148.status: |                         |    522/221642 |   0%
-           publishing_status.148.updated_by: |                         |    522/221642 |   0%
-           publishing_status.148.updated_on: |                         |    522/221642 |   0%
-             publishing_status.149.asset_id: |                         |   1190/221642 |   0%
- publishing_status.149.publishing_target_id: |                         |   1190/221642 |   0%
-               publishing_status.149.status: |                         |   1190/221642 |   0%
-           publishing_status.149.updated_by: |                         |   1190/221642 |   0%
-           publishing_status.149.updated_on: |                         |   1190/221642 |   0%
-             publishing_status.150.asset_id: |                         |   1898/221642 |   0%
- publishing_status.150.publishing_target_id: |                         |   1898/221642 |   0%
-               publishing_status.150.status: |                         |   1898/221642 |   0%
-           publishing_status.150.updated_by: |                         |   1898/221642 |   0%
-           publishing_status.150.updated_on: |                         |   1898/221642 |   0%
-             publishing_status.151.asset_id: |                         |    842/221642 |   0%
- publishing_status.151.publishing_target_id: |                         |    842/221642 |   0%
-               publishing_status.151.status: |                         |    842/221642 |   0%
-           publishing_status.151.updated_by: |                         |    842/221642 |   0%
-           publishing_status.151.updated_on: |                         |    842/221642 |   0%
-             publishing_status.152.asset_id: |                         |    416/221642 |   0%
- publishing_status.152.publishing_target_id: |                         |    416/221642 |   0%
-               publishing_status.152.status: |                         |    416/221642 |   0%
-           publishing_status.152.updated_by: |                         |    416/221642 |   0%
-           publishing_status.152.updated_on: |                         |    416/221642 |   0%
-             publishing_status.153.asset_id: |                         |    223/221642 |   0%
- publishing_status.153.publishing_target_id: |                         |    223/221642 |   0%
-               publishing_status.153.status: |                         |    223/221642 |   0%
-           publishing_status.153.updated_by: |                         |    223/221642 |   0%
-           publishing_status.153.updated_on: |                         |    223/221642 |   0%
-             publishing_status.154.asset_id: |                         |   1529/221642 |   0%
- publishing_status.154.publishing_target_id: |                         |   1529/221642 |   0%
-               publishing_status.154.status: |                         |   1529/221642 |   0%
-           publishing_status.154.updated_by: |                         |   1529/221642 |   0%
-           publishing_status.154.updated_on: |                         |   1529/221642 |   0%
-             publishing_status.155.asset_id: |                         |   3390/221642 |   1%
- publishing_status.155.publishing_target_id: |                         |   3390/221642 |   1%
-               publishing_status.155.status: |                         |   3390/221642 |   1%
-           publishing_status.155.updated_by: |                         |   3390/221642 |   1%
-           publishing_status.155.updated_on: |                         |   3390/221642 |   1%
-             publishing_status.156.asset_id: |                         |   2246/221642 |   1%
- publishing_status.156.publishing_target_id: |                         |   2246/221642 |   1%
-               publishing_status.156.status: |                         |   2246/221642 |   1%
-           publishing_status.156.updated_by: |                         |   2246/221642 |   1%
-           publishing_status.156.updated_on: |                         |   2246/221642 |   1%
-             publishing_status.157.asset_id: |                         |    616/221642 |   0%
- publishing_status.157.publishing_target_id: |                         |    616/221642 |   0%
-               publishing_status.157.status: |                         |    616/221642 |   0%
-           publishing_status.157.updated_by: |                         |    616/221642 |   0%
-           publishing_status.157.updated_on: |                         |    616/221642 |   0%
-            publishing_status.1635.asset_id: |                         |     25/221642 |   0%
-publishing_status.1635.publishing_target_id: |                         |     25/221642 |   0%
-              publishing_status.1635.status: |                         |     25/221642 |   0%
-          publishing_status.1635.updated_by: |                         |     25/221642 |   0%
-          publishing_status.1635.updated_on: |                         |     25/221642 |   0%
-             publishing_status.165.asset_id: |                         |   1782/221642 |   0%
- publishing_status.165.publishing_target_id: |                         |   1782/221642 |   0%
-               publishing_status.165.status: |                         |   1782/221642 |   0%
-           publishing_status.165.updated_by: |                         |   1782/221642 |   0%
-           publishing_status.165.updated_on: |                         |   1782/221642 |   0%
-             publishing_status.166.asset_id: |                         |   1782/221642 |   0%
- publishing_status.166.publishing_target_id: |                         |   1782/221642 |   0%
-               publishing_status.166.status: |                         |   1782/221642 |   0%
-           publishing_status.166.updated_by: |                         |   1782/221642 |   0%
-           publishing_status.166.updated_on: |                         |   1782/221642 |   0%
-             publishing_status.167.asset_id: |=                        |  16543/221642 |   7%
- publishing_status.167.publishing_target_id: |=                        |  16543/221642 |   7%
-               publishing_status.167.status: |=                        |  16543/221642 |   7%
-           publishing_status.167.updated_by: |=                        |  16543/221642 |   7%
-           publishing_status.167.updated_on: |=                        |  16543/221642 |   7%
-             publishing_status.168.asset_id: |=                        |  16543/221642 |   7%
- publishing_status.168.publishing_target_id: |=                        |  16543/221642 |   7%
-               publishing_status.168.status: |=                        |  16543/221642 |   7%
-           publishing_status.168.updated_by: |=                        |  16543/221642 |   7%
-           publishing_status.168.updated_on: |=                        |  16543/221642 |   7%
-             publishing_status.194.asset_id: |                         |    883/221642 |   0%
- publishing_status.194.publishing_target_id: |                         |    883/221642 |   0%
-               publishing_status.194.status: |                         |    883/221642 |   0%
-           publishing_status.194.updated_by: |                         |    883/221642 |   0%
-           publishing_status.194.updated_on: |                         |    883/221642 |   0%
-             publishing_status.195.asset_id: |                         |    883/221642 |   0%
- publishing_status.195.publishing_target_id: |                         |    883/221642 |   0%
-               publishing_status.195.status: |                         |    883/221642 |   0%
-           publishing_status.195.updated_by: |                         |    883/221642 |   0%
-           publishing_status.195.updated_on: |                         |    883/221642 |   0%
-             publishing_status.198.asset_id: |                         |    474/221642 |   0%
- publishing_status.198.publishing_target_id: |                         |    474/221642 |   0%
-               publishing_status.198.status: |                         |    474/221642 |   0%
-           publishing_status.198.updated_by: |                         |    474/221642 |   0%
-           publishing_status.198.updated_on: |                         |    474/221642 |   0%
-             publishing_status.199.asset_id: |                         |    494/221642 |   0%
- publishing_status.199.publishing_target_id: |                         |    494/221642 |   0%
-               publishing_status.199.status: |                         |    494/221642 |   0%
-           publishing_status.199.updated_by: |                         |    494/221642 |   0%
-           publishing_status.199.updated_on: |                         |    494/221642 |   0%
-             publishing_status.200.asset_id: |                         |    494/221642 |   0%
- publishing_status.200.publishing_target_id: |                         |    494/221642 |   0%
-               publishing_status.200.status: |                         |    494/221642 |   0%
-           publishing_status.200.updated_by: |                         |    494/221642 |   0%
-           publishing_status.200.updated_on: |                         |    494/221642 |   0%
-             publishing_status.201.asset_id: |                         |   1791/221642 |   0%
- publishing_status.201.publishing_target_id: |                         |   1791/221642 |   0%
-               publishing_status.201.status: |                         |   1791/221642 |   0%
-           publishing_status.201.updated_by: |                         |   1791/221642 |   0%
-           publishing_status.201.updated_on: |                         |   1791/221642 |   0%
-             publishing_status.202.asset_id: |                         |   1791/221642 |   0%
- publishing_status.202.publishing_target_id: |                         |   1791/221642 |   0%
-               publishing_status.202.status: |                         |   1791/221642 |   0%
-           publishing_status.202.updated_by: |                         |   1791/221642 |   0%
-           publishing_status.202.updated_on: |                         |   1791/221642 |   0%
-             publishing_status.205.asset_id: |                         |   6072/221642 |   2%
- publishing_status.205.publishing_target_id: |                         |   6072/221642 |   2%
-               publishing_status.205.status: |                         |   6072/221642 |   2%
-           publishing_status.205.updated_by: |                         |   6072/221642 |   2%
-           publishing_status.205.updated_on: |                         |   6072/221642 |   2%
-             publishing_status.207.asset_id: |                         |    729/221642 |   0%
- publishing_status.207.publishing_target_id: |                         |    729/221642 |   0%
-               publishing_status.207.status: |                         |    729/221642 |   0%
-           publishing_status.207.updated_by: |                         |    729/221642 |   0%
-           publishing_status.207.updated_on: |                         |    729/221642 |   0%
-             publishing_status.208.asset_id: |                         |    729/221642 |   0%
- publishing_status.208.publishing_target_id: |                         |    729/221642 |   0%
-               publishing_status.208.status: |                         |    729/221642 |   0%
-           publishing_status.208.updated_by: |                         |    729/221642 |   0%
-           publishing_status.208.updated_on: |                         |    729/221642 |   0%
-             publishing_status.222.asset_id: |=                        |  13172/221642 |   5%
- publishing_status.222.publishing_target_id: |=                        |  13172/221642 |   5%
-               publishing_status.222.status: |=                        |  13172/221642 |   5%
-           publishing_status.222.updated_by: |=                        |  13172/221642 |   5%
-           publishing_status.222.updated_on: |=                        |  13172/221642 |   5%
-             publishing_status.223.asset_id: |                         |   8438/221642 |   3%
- publishing_status.223.publishing_target_id: |                         |   8438/221642 |   3%
-               publishing_status.223.status: |                         |   8438/221642 |   3%
-           publishing_status.223.updated_by: |                         |   8438/221642 |   3%
-           publishing_status.223.updated_on: |                         |   8438/221642 |   3%
-            publishing_status.2301.asset_id: |                         |    154/221642 |   0%
-publishing_status.2301.publishing_target_id: |                         |    154/221642 |   0%
-              publishing_status.2301.status: |                         |    154/221642 |   0%
-          publishing_status.2301.updated_by: |                         |    154/221642 |   0%
-          publishing_status.2301.updated_on: |                         |    154/221642 |   0%
-             publishing_status.249.asset_id: |                         |     87/221642 |   0%
- publishing_status.249.publishing_target_id: |                         |     87/221642 |   0%
-               publishing_status.249.status: |                         |     87/221642 |   0%
-           publishing_status.249.updated_by: |                         |     87/221642 |   0%
-           publishing_status.249.updated_on: |                         |     87/221642 |   0%
-             publishing_status.250.asset_id: |                         |     87/221642 |   0%
- publishing_status.250.publishing_target_id: |                         |     87/221642 |   0%
-               publishing_status.250.status: |                         |     87/221642 |   0%
-           publishing_status.250.updated_by: |                         |     87/221642 |   0%
-           publishing_status.250.updated_on: |                         |     87/221642 |   0%
-             publishing_status.273.asset_id: |                         |    216/221642 |   0%
- publishing_status.273.publishing_target_id: |                         |    216/221642 |   0%
-               publishing_status.273.status: |                         |    216/221642 |   0%
-           publishing_status.273.updated_by: |                         |    216/221642 |   0%
-           publishing_status.273.updated_on: |                         |    216/221642 |   0%
-             publishing_status.274.asset_id: |                         |    216/221642 |   0%
- publishing_status.274.publishing_target_id: |                         |    216/221642 |   0%
-               publishing_status.274.status: |                         |    216/221642 |   0%
-           publishing_status.274.updated_by: |                         |    216/221642 |   0%
-           publishing_status.274.updated_on: |                         |    216/221642 |   0%
-             publishing_status.275.asset_id: |                         |     46/221642 |   0%
- publishing_status.275.publishing_target_id: |                         |     46/221642 |   0%
-               publishing_status.275.status: |                         |     46/221642 |   0%
-           publishing_status.275.updated_by: |                         |     46/221642 |   0%
-           publishing_status.275.updated_on: |                         |     46/221642 |   0%
-             publishing_status.276.asset_id: |                         |     46/221642 |   0%
- publishing_status.276.publishing_target_id: |                         |     46/221642 |   0%
-               publishing_status.276.status: |                         |     46/221642 |   0%
-           publishing_status.276.updated_by: |                         |     46/221642 |   0%
-           publishing_status.276.updated_on: |                         |     46/221642 |   0%
-             publishing_status.277.asset_id: |                         |     17/221642 |   0%
- publishing_status.277.publishing_target_id: |                         |     17/221642 |   0%
-               publishing_status.277.status: |                         |     17/221642 |   0%
-           publishing_status.277.updated_by: |                         |     17/221642 |   0%
-           publishing_status.277.updated_on: |                         |     17/221642 |   0%
-             publishing_status.278.asset_id: |                         |     17/221642 |   0%
- publishing_status.278.publishing_target_id: |                         |     17/221642 |   0%
-               publishing_status.278.status: |                         |     17/221642 |   0%
-           publishing_status.278.updated_by: |                         |     17/221642 |   0%
-           publishing_status.278.updated_on: |                         |     17/221642 |   0%
-             publishing_status.279.asset_id: |                         |    264/221642 |   0%
- publishing_status.279.publishing_target_id: |                         |    264/221642 |   0%
-               publishing_status.279.status: |                         |    264/221642 |   0%
-           publishing_status.279.updated_by: |                         |    264/221642 |   0%
-           publishing_status.279.updated_on: |                         |    264/221642 |   0%
-             publishing_status.280.asset_id: |                         |    264/221642 |   0%
- publishing_status.280.publishing_target_id: |                         |    264/221642 |   0%
-               publishing_status.280.status: |                         |    264/221642 |   0%
-           publishing_status.280.updated_by: |                         |    264/221642 |   0%
-           publishing_status.280.updated_on: |                         |    264/221642 |   0%
-             publishing_status.281.asset_id: |                         |   1077/221642 |   0%
- publishing_status.281.publishing_target_id: |                         |   1077/221642 |   0%
-               publishing_status.281.status: |                         |   1077/221642 |   0%
-           publishing_status.281.updated_by: |                         |   1077/221642 |   0%
-           publishing_status.281.updated_on: |                         |   1077/221642 |   0%
-             publishing_status.282.asset_id: |                         |   1077/221642 |   0%
- publishing_status.282.publishing_target_id: |                         |   1077/221642 |   0%
-               publishing_status.282.status: |                         |   1077/221642 |   0%
-           publishing_status.282.updated_by: |                         |   1077/221642 |   0%
-           publishing_status.282.updated_on: |                         |   1077/221642 |   0%
-             publishing_status.283.asset_id: |                         |   1804/221642 |   0%
- publishing_status.283.publishing_target_id: |                         |   1804/221642 |   0%
-               publishing_status.283.status: |                         |   1804/221642 |   0%
-           publishing_status.283.updated_by: |                         |   1804/221642 |   0%
-           publishing_status.283.updated_on: |                         |   1804/221642 |   0%
-             publishing_status.284.asset_id: |                         |   1804/221642 |   0%
- publishing_status.284.publishing_target_id: |                         |   1804/221642 |   0%
-               publishing_status.284.status: |                         |   1804/221642 |   0%
-           publishing_status.284.updated_by: |                         |   1804/221642 |   0%
-           publishing_status.284.updated_on: |                         |   1804/221642 |   0%
-             publishing_status.285.asset_id: |                         |    138/221642 |   0%
- publishing_status.285.publishing_target_id: |                         |    138/221642 |   0%
-               publishing_status.285.status: |                         |    138/221642 |   0%
-           publishing_status.285.updated_by: |                         |    138/221642 |   0%
-           publishing_status.285.updated_on: |                         |    138/221642 |   0%
-             publishing_status.286.asset_id: |                         |    138/221642 |   0%
- publishing_status.286.publishing_target_id: |                         |    138/221642 |   0%
-               publishing_status.286.status: |                         |    138/221642 |   0%
-           publishing_status.286.updated_by: |                         |    138/221642 |   0%
-           publishing_status.286.updated_on: |                         |    138/221642 |   0%
-              publishing_status.32.asset_id: |                         |    616/221642 |   0%
-  publishing_status.32.publishing_target_id: |                         |    616/221642 |   0%
-                publishing_status.32.status: |                         |    616/221642 |   0%
-            publishing_status.32.updated_by: |                         |    616/221642 |   0%
-            publishing_status.32.updated_on: |                         |    616/221642 |   0%
-             publishing_status.324.asset_id: |                         |   7367/221642 |   3%
- publishing_status.324.publishing_target_id: |                         |   7367/221642 |   3%
-               publishing_status.324.status: |                         |   7367/221642 |   3%
-           publishing_status.324.updated_by: |                         |   7367/221642 |   3%
-           publishing_status.324.updated_on: |                         |   7367/221642 |   3%
-             publishing_status.325.asset_id: |                         |   7620/221642 |   3%
- publishing_status.325.publishing_target_id: |                         |   7620/221642 |   3%
-               publishing_status.325.status: |                         |   7620/221642 |   3%
-           publishing_status.325.updated_by: |                         |   7620/221642 |   3%
-           publishing_status.325.updated_on: |                         |   7620/221642 |   3%
-             publishing_status.412.asset_id: |                         |      1/221642 |   0%
- publishing_status.412.publishing_target_id: |                         |      1/221642 |   0%
-               publishing_status.412.status: |                         |      1/221642 |   0%
-           publishing_status.412.updated_by: |                         |      1/221642 |   0%
-           publishing_status.412.updated_on: |                         |      1/221642 |   0%
-             publishing_status.418.asset_id: |                         |   6147/221642 |   2%
- publishing_status.418.publishing_target_id: |                         |   6147/221642 |   2%
-               publishing_status.418.status: |                         |   6147/221642 |   2%
-           publishing_status.418.updated_by: |                         |   6147/221642 |   2%
-           publishing_status.418.updated_on: |                         |   6147/221642 |   2%
-             publishing_status.420.asset_id: |                         |   6306/221642 |   2%
- publishing_status.420.publishing_target_id: |                         |   6306/221642 |   2%
-               publishing_status.420.status: |                         |   6306/221642 |   2%
-           publishing_status.420.updated_by: |                         |   6306/221642 |   2%
-           publishing_status.420.updated_on: |                         |   6306/221642 |   2%
-             publishing_status.438.asset_id: |                         |   1357/221642 |   0%
- publishing_status.438.publishing_target_id: |                         |   1357/221642 |   0%
-               publishing_status.438.status: |                         |   1357/221642 |   0%
-           publishing_status.438.updated_by: |                         |   1357/221642 |   0%
-           publishing_status.438.updated_on: |                         |   1357/221642 |   0%
-             publishing_status.439.asset_id: |                         |   1357/221642 |   0%
- publishing_status.439.publishing_target_id: |                         |   1357/221642 |   0%
-               publishing_status.439.status: |                         |   1357/221642 |   0%
-           publishing_status.439.updated_by: |                         |   1357/221642 |   0%
-           publishing_status.439.updated_on: |                         |   1357/221642 |   0%
-             publishing_status.472.asset_id: |=                        |  11102/221642 |   5%
- publishing_status.472.publishing_target_id: |=                        |  11102/221642 |   5%
-               publishing_status.472.status: |=                        |  11102/221642 |   5%
-           publishing_status.472.updated_by: |=                        |  11102/221642 |   5%
-           publishing_status.472.updated_on: |=                        |  11102/221642 |   5%
-             publishing_status.480.asset_id: |                         |     49/221642 |   0%
- publishing_status.480.publishing_target_id: |                         |     49/221642 |   0%
-               publishing_status.480.status: |                         |     49/221642 |   0%
-           publishing_status.480.updated_by: |                         |     49/221642 |   0%
-           publishing_status.480.updated_on: |                         |     49/221642 |   0%
-             publishing_status.481.asset_id: |                         |     49/221642 |   0%
- publishing_status.481.publishing_target_id: |                         |     49/221642 |   0%
-               publishing_status.481.status: |                         |     49/221642 |   0%
-           publishing_status.481.updated_by: |                         |     49/221642 |   0%
-           publishing_status.481.updated_on: |                         |     49/221642 |   0%
-             publishing_status.553.asset_id: |=                        |  11102/221642 |   5%
- publishing_status.553.publishing_target_id: |=                        |  11102/221642 |   5%
-               publishing_status.553.status: |=                        |  11102/221642 |   5%
-           publishing_status.553.updated_by: |=                        |  11102/221642 |   5%
-           publishing_status.553.updated_on: |=                        |  11102/221642 |   5%
-             publishing_status.677.asset_id: |                         |   1017/221642 |   0%
- publishing_status.677.publishing_target_id: |                         |   1017/221642 |   0%
-               publishing_status.677.status: |                         |   1017/221642 |   0%
-           publishing_status.677.updated_by: |                         |   1017/221642 |   0%
-           publishing_status.677.updated_on: |                         |   1017/221642 |   0%
-             publishing_status.747.asset_id: |                         |    185/221642 |   0%
- publishing_status.747.publishing_target_id: |                         |    185/221642 |   0%
-               publishing_status.747.status: |                         |    185/221642 |   0%
-           publishing_status.747.updated_by: |                         |    185/221642 |   0%
-           publishing_status.747.updated_on: |                         |    185/221642 |   0%
-             publishing_status.748.asset_id: |                         |    185/221642 |   0%
- publishing_status.748.publishing_target_id: |                         |    185/221642 |   0%
-               publishing_status.748.status: |                         |    185/221642 |   0%
-           publishing_status.748.updated_by: |                         |    185/221642 |   0%
-           publishing_status.748.updated_on: |                         |    185/221642 |   0%
-             publishing_status.759.asset_id: |                         |   6163/221642 |   2%
- publishing_status.759.publishing_target_id: |                         |   6163/221642 |   2%
-               publishing_status.759.status: |                         |   6163/221642 |   2%
-           publishing_status.759.updated_by: |                         |   6163/221642 |   2%
-           publishing_status.759.updated_on: |                         |   6163/221642 |   2%
-             publishing_status.777.asset_id: |                         |   2652/221642 |   1%
- publishing_status.777.publishing_target_id: |                         |   2652/221642 |   1%
-               publishing_status.777.status: |                         |   2652/221642 |   1%
-           publishing_status.777.updated_by: |                         |   2652/221642 |   1%
-           publishing_status.777.updated_on: |                         |   2652/221642 |   1%
-             publishing_status.788.asset_id: |                         |   3794/221642 |   1%
- publishing_status.788.publishing_target_id: |                         |   3794/221642 |   1%
-               publishing_status.788.status: |                         |   3794/221642 |   1%
-           publishing_status.788.updated_by: |                         |   3794/221642 |   1%
-           publishing_status.788.updated_on: |                         |   3794/221642 |   1%
-             publishing_status.789.asset_id: |                         |   3794/221642 |   1%
- publishing_status.789.publishing_target_id: |                         |   3794/221642 |   1%
-               publishing_status.789.status: |                         |   3794/221642 |   1%
-           publishing_status.789.updated_by: |                         |   3794/221642 |   1%
-           publishing_status.789.updated_on: |                         |   3794/221642 |   1%
-             publishing_status.823.asset_id: |                         |    240/221642 |   0%
- publishing_status.823.publishing_target_id: |                         |    240/221642 |   0%
-               publishing_status.823.status: |                         |    240/221642 |   0%
-           publishing_status.823.updated_by: |                         |    240/221642 |   0%
-           publishing_status.823.updated_on: |                         |    240/221642 |   0%
-             publishing_status.824.asset_id: |                         |    240/221642 |   0%
- publishing_status.824.publishing_target_id: |                         |    240/221642 |   0%
-               publishing_status.824.status: |                         |    240/221642 |   0%
-           publishing_status.824.updated_by: |                         |    240/221642 |   0%
-           publishing_status.824.updated_on: |                         |    240/221642 |   0%
-              publishing_status.85.asset_id: |                         |    522/221642 |   0%
-  publishing_status.85.publishing_target_id: |                         |    522/221642 |   0%
-                publishing_status.85.status: |                         |    522/221642 |   0%
-            publishing_status.85.updated_by: |                         |    522/221642 |   0%
-            publishing_status.85.updated_on: |                         |    522/221642 |   0%
-              publishing_status.87.asset_id: |                         |   3390/221642 |   1%
-  publishing_status.87.publishing_target_id: |                         |   3390/221642 |   1%
-                publishing_status.87.status: |                         |   3390/221642 |   1%
-            publishing_status.87.updated_by: |                         |   3390/221642 |   1%
-            publishing_status.87.updated_on: |                         |   3390/221642 |   1%
-             publishing_status.908.asset_id: |                         |    310/221642 |   0%
- publishing_status.908.publishing_target_id: |                         |    310/221642 |   0%
-               publishing_status.908.status: |                         |    310/221642 |   0%
-           publishing_status.908.updated_by: |                         |    310/221642 |   0%
-           publishing_status.908.updated_on: |                         |    310/221642 |   0%
-             publishing_status.956.asset_id: |                         |    310/221642 |   0%
- publishing_status.956.publishing_target_id: |                         |    310/221642 |   0%
-               publishing_status.956.status: |                         |    310/221642 |   0%
-           publishing_status.956.updated_by: |                         |    310/221642 |   0%
-           publishing_status.956.updated_on: |                         |    310/221642 |   0%
-             publishing_status.958.asset_id: |                         |   6684/221642 |   3%
- publishing_status.958.publishing_target_id: |                         |   6684/221642 |   3%
-               publishing_status.958.status: |                         |   6684/221642 |   3%
-           publishing_status.958.updated_by: |                         |   6684/221642 |   3%
-           publishing_status.958.updated_on: |                         |   6684/221642 |   3%
-             publishing_status.959.asset_id: |                         |   1364/221642 |   0%
- publishing_status.959.publishing_target_id: |                         |   1364/221642 |   0%
-               publishing_status.959.status: |                         |   1364/221642 |   0%
-           publishing_status.959.updated_by: |                         |   1364/221642 |   0%
-           publishing_status.959.updated_on: |                         |   1364/221642 |   0%
-             publishing_status.960.asset_id: |                         |     81/221642 |   0%
- publishing_status.960.publishing_target_id: |                         |     81/221642 |   0%
-               publishing_status.960.status: |                         |     81/221642 |   0%
-           publishing_status.960.updated_by: |                         |     81/221642 |   0%
-           publishing_status.960.updated_on: |                         |     81/221642 |   0%
+[skipping over publication_status fields, which depend on each collection.                  ]
                                   report_id: |======================   | 202696/221642 |  91%
                             sequence_number: |====================     | 179108/221642 |  80%
                                      status: |======================   | 202696/221642 |  91%
@@ -1395,80 +941,168 @@ publishing_status.2301.publishing_target_id: |                         |    154/
 
 ```
 
-## List of Collections in SharedShelf Currently (Number of Resources in the Collection)
+## List of Collections in SharedShelf Currently with its SharedShelf ID
 
-  - Willard Dickerman Straight and Early U.S.-Korea Diplomatic Relations (89)
-  - Andrew Dickson White Collection of Architectural Photographs (685)
-  - Obama Visual Iconography (256)
-  - Political Americana (922)
-  - Vicos (134)
-  - Billie Jean Isbell (135)
-  - Icelandic - Cambridge Expedition Negatives (1032)
-  - Tamang (522)
-  - JWB2 (139)
-  - Map Collection (141)
-  - Labor Photos (142)
-  - Kassoy Cartoons (143)
-  - Anthropology Collections (273)
-  - EAS - Tarr and vonEngeln (531)
-  - PAFDAO - Art Objects (532)
-  - Hill Ornithology Collection (686)
-  - Efraim Racker Art Albums (920)
-  - ETC (153)
-  - Wa (794)
-  - KMODDL (155)
-  - Cushman Recordings (1034)
-  - Beyond the Taj: Architectural Traditions and Landscape Experience in South Asia (687)
-  - Cornell Costume and Textile Collection (2849)
-  - Racker Paintings (411)
-  - Eleusis (166)
-  - Hip Hop Flyers (167)
-  - HFJ (552)
-  - RMC (174)
-  - Monumentum Ancyranum Squeeze Molds (559)
-  - Campus Artifacts, Art &amp; Memorabilia (48)
-  - KARMA (49)
-  - Japanese Woodblocks (50)
-  - Archivision Module 7  (437)
-  - Archivision Module 8 (439)
-  - Weill Archives (185)
-  - Plant Pathology Herbarium (186)
-  - Cornell FS 200814 (699)
-  - Archivision Library - Addition Module Six (188)
-  - REX TEST (701)
-  - Joe Conzo Negatives &amp; Prints (190)
-  - African American Photographs (319)
-  - Icelandic Stereoscopes (962)
-  - Archivision Module 9 (779)
-  - Gem Impressions (452)
-  - Tamang - Documents (3016)
-  - Archivision Module 10 (1098)
-  - A&amp;S Images for Teaching Collection (695)
-  - Reps Bastides (589)
-  - NYS Aerial Photographs (78)
-  - Sterrett Photographs (2895)
-  - Landslides Photography (209)
-  - History of Psychiatry (WCMC) (466)
-  - Alison Mason Kingsbury (88)
-  - Leuenberger Map Collection (954)
-  - PAFDAO - images (479)
-  - Cornell Cast Collection (97)
-  - Claire Holt Indonesian Art Collection (98)
-  - John Clair Miller (657)
-  - Gamelan (616)
-  - Ragamala Paintings (746)
-  - Lab of Ornithology Art Collection (2919)
-  - Coins Collection (108)
-  - Project Management (621)
-  - Divine Comedy Image Archive (111)
-  - Howell Icelandic (112)
-  - Lab of Ornithology Art Collection_Internal (2920)
-  - Reps Slides (370)
-  - PJ Mode Map Collection (659)
-  - Ernie Paniccioli Archive (757)
-  - Sri Lankan Vernacular (1146)
-  - Kuchera - AAP (1147)
-  - Charlie Ahern Archive (892)
-  - Bill Adler Archive (893)
-  - Anthropology Lantern Slides (2943)
-
+| Collection Name | SharedShelf Collection ID |
+| --------------- | ------------------------- |
+| Shared Shelf Source Name | ID: 1150 |
+| Shared Shelf Source Detail Type | ID: 1151 |
+| Shared Shelf Language | ID: 1152 |
+| Shared Shelf Culture | ID: 1153 |
+| Shared Shelf Relation Type | ID: 1154 |
+| Shared Shelf Subjects | ID: 1155 |
+| Shared Shelf Subject Type | ID: 1156 |
+| Shared Shelf Work Note Type | ID: 1157 |
+| Shared Shelf Rights Type | ID: 1158 |
+| Shared Shelf Place Type | ID: 1159 |
+| Shared Shelf Title Type | ID: 1160 |
+| Shared Shelf Gender | ID: 1161 |
+| Shared Shelf Related Info Type | ID: 1162 |
+| Artstor Classification | ID: 1163 |
+| Shared Shelf Role | ID: 1164 |
+| Shared Shelf Subject Extent | ID: 1165 |
+| Shared Shelf Agent Attribution | ID: 1166 |
+| Artstor Country | ID: 1167 |
+| Shared Shelf Language Script | ID: 1168 |
+| Shared Shelf Language Transliteration | ID: 1169 |
+| Shared Shelf Name Note Type | ID: 1170 |
+| Shared Shelf Name Relationship | ID: 1171 |
+| Shared Shelf Owner Type | ID: 1172 |
+| Shared Shelf Classification | ID: 1173 |
+| Shared Shelf Date Type | ID: 1174 |
+| Shared Shelf Measurement Qualifier | ID: 1175 |
+| Shared Shelf Measurement Shape | ID: 1176 |
+| Shared Shelf Measurement Type | ID: 1177 |
+| Shared Shelf Measurement Units | ID: 1178 |
+| Shared Shelf Event | ID: 1179 |
+| Shared Shelf Measurement Extent | ID: 1180 |
+| Shared Shelf Inscription Type | ID: 1181 |
+| Shared Shelf Material Type | ID: 1182 |
+| Shared Shelf Measurement Format | ID: 1183 |
+| Shared Shelf Text Reference ID Type | ID: 1184 |
+| Shared Shelf Repository Type | ID: 1185 |
+| Shared Shelf Ref ID Type | ID: 1186 |
+| Shared Shelf Measurement Scale Type | ID: 1187 |
+| Shared Shelf Source Name Type | ID: 1188 |
+| Shared Shelf State/Edition Type | ID: 1189 |
+| Shared Shelf Style/Period Type | ID: 1190 |
+| Shared Shelf Text Reference Type | ID: 1191 |
+| Shared Shelf Material | ID: 1192 |
+| Shared Shelf Technique | ID: 1193 |
+| Shared Shelf Style/Period | ID: 1194 |
+| Shared Shelf Work Type | ID: 1195 |
+| Ragamala Paintings: System | ID: 1653 |
+| Cornell FS 200814: Status | ID: 1657 |
+| Knight Visual Resources Collection: Status | ID: 1658 |
+| PJ Mode Map Collection: Date Category | ID: 1702 |
+| PJ Mode Map Collection: Subject Terms | ID: 1703 |
+| PJ Mode Map Collection: Type | ID: 1704 |
+| John Clair Miller: Image View Type | ID: 1710 |
+| John Clair Miller: Project Type | ID: 1711 |
+| Project Management: Identifier Type | ID: 1759 |
+| Project Management: Restrictions on Access | ID: 1760 |
+| Project Management: Creator 1 Type | ID: 1761 |
+| Project Management: Creator 2 Type | ID: 1762 |
+| Project Management: Creator 3 Type | ID: 1763 |
+| Reps Bastides: Features | ID: 1785 |
+| Monumentum Ancyranum Squeeze Molds: Image view type | ID: 1815 |
+| Monumentum Ancyranum Squeeze Molds: Work Type | ID: 1816 |
+| PAFDAO - Art Objects: Disc Type | ID: 1847 |
+| PAFDAO - Art Objects: Disc Layout | ID: 1848 |
+| PAFDAO - Art Objects: Filesystems on disc | ID: 1849 |
+| Reps Slides: Faces | ID: 2150 |
+| Weill Archives: Subject  | ID: 2524 |
+| Weill Archives: Donor | ID: 2525 |
+| Weill Archives: Topical Subject | ID: 2526 |
+| Weill Archives: Proper Name Subject | ID: 2527 |
+| Weill Archives: Creator | ID: 2528 |
+| ETC: Odd | ID: 2574 |
+| ETC: Categories | ID: 2575 |
+| ETC: Compilation | ID: 2576 |
+| Kuchera_Graphical Depiction | ID: 2803 |
+| Kuchera_Media | ID: 2804 |
+| Kuchera_Type (use this one) | ID: 2802 |
+| Kuchera_Project Focus | ID: 2805 |
+| Kuchera_Shape | ID: 2806 |
+| Kuchera_Type | ID: 2801 |
+| Project Management: Project Manager | ID: 2842 |
+| CCTC_Donor Type | ID: 2850 |
+| CCTC_Donor File | ID: 2851 |
+| CCTC_Demographic | ID: 2852 |
+| CCTC_Loan Status | ID: 2853 |
+| CCTC_Photo Location | ID: 2854 |
+| Icelandic Stereoscopes | ID: 962 |
+| Hip Hop Flyers | ID: 167 |
+| Reps Bastides | ID: 589 |
+| PAFDAO - Art Objects | ID: 532 |
+| Coin Collection | ID: 108 |
+| EAS - Tarr and vonEngeln | ID: 531 |
+| HFJ | ID: 552 |
+| Monumentum Ancyranum Squeeze Molds | ID: 559 |
+| Campus Artifacts, Art &amp; Memorabilia | ID: 48 |
+| KARMA | ID: 49 |
+| Japanese Woodblocks | ID: 50 |
+| NYS Aerial Photographs | ID: 78 |
+| Alison Mason Kingsbury | ID: 88 |
+| Willard Dickerman Straight and Early U.S.-Korea Diplomatic Relations | ID: 89 |
+| Cornell Cast Collection | ID: 97 |
+| Claire Holt Indonesian Art Collection | ID: 98 |
+| Divine Comedy Image Archive | ID: 111 |
+| Howell Icelandic | ID: 112 |
+| Vicos | ID: 134 |
+| Billie Jean Isbell | ID: 135 |
+| JWB2 | ID: 139 |
+| Map Collection | ID: 141 |
+| Labor Photos | ID: 142 |
+| Kassoy Cartoons | ID: 143 |
+| ETC | ID: 153 |
+| KMODDL | ID: 155 |
+| Eleusis | ID: 166 |
+| RMC | ID: 174 |
+| Weill Archives | ID: 185 |
+| Plant Pathology Herbarium | ID: 186 |
+| Archivision Library - Addition Module Six | ID: 188 |
+| Joe Conzo Negatives &amp; Prints | ID: 190 |
+| Landslides Photography | ID: 209 |
+| Obama Visual Iconography | ID: 256 |
+| Anthropology Collections | ID: 273 |
+| African American Photographs | ID: 319 |
+| Reps Slides | ID: 370 |
+| Racker Paintings | ID: 411 |
+| Archivision Module 7  | ID: 437 |
+| Archivision Module 8 | ID: 439 |
+| Gem Impressions | ID: 452 |
+| History of Psychiatry (WCMC) | ID: 466 |
+| PAFDAO - images | ID: 479 |
+| Tamang | ID: 522 |
+| Gamelan | ID: 616 |
+| Project Management | ID: 621 |
+| John Clair Miller | ID: 657 |
+| PJ Mode Map Collection | ID: 659 |
+| Andrew Dickson White Collection of Architectural Photographs | ID: 685 |
+| Hill Ornithology Collection | ID: 686 |
+| Beyond the Taj: Architectural Traditions and Landscape Experience in South Asia | ID: 687 |
+| Cornell FS 200814 | ID: 699 |
+| REX TEST | ID: 701 |
+| Wa | ID: 794 |
+| A&amp;S Images for Teaching Collection | ID: 695 |
+| Ragamala Paintings | ID: 746 |
+| Archivision Module 9 | ID: 779 |
+| Ernie Paniccioli Archive | ID: 757 |
+| Political Americana | ID: 922 |
+| Leuenberger Map Collection | ID: 954 |
+| Anthropology Lantern Slides | ID: 2943 |
+| Efraim Racker Art Albums | ID: 920 |
+| Sri Lankan Vernacular | ID: 1146 |
+| Lab of Ornithology Art Collection | ID: 2919 |
+| Bill Adler Archive | ID: 893 |
+| Archivision Module 10 | ID: 1098 |
+| Icelandic - Cambridge Expedition Negatives | ID: 1032 |
+| Cushman Recordings | ID: 1034 |
+| Kuchera - AAP | ID: 1147 |
+| Cornell Costume and Textile Collection | ID: 2849 |
+| Sterrett Photographs | ID: 2895 |
+| Tamang - Documents | ID: 3016 |
+| Lab of Ornithology Art Collection_Internal | ID: 2920 |
+| PJ Mode Map Collection_Phase II | ID: 3233 |
+| Charlie Ahearn Archive | ID: 3262 |
