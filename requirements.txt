@@ -1,2 +1,5 @@
+objectpath==0.5
+pytz==2016.10
 readline==6.2.4.1
 requests==2.12.5
+six==1.10.0

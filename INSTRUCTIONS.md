@@ -95,11 +95,60 @@ Retrieving project Billie Jean Isbell
 ...
 ```
 
-What this script does is first query for all the unique collections in our SharedShelf instance, then iterate over each collection to grab the data. The data grabbed for each collection describes each digital object therein and pulls the json data exactly as found.
+What this script does is first query for all the unique collections in our SharedShelf instance, then iterate over each collection to grab the data. The data grabbed for each collection describes each digital object therein and, where possible, matches the collection-specific metadata field code to the metadata field text name. Where there isn't a text name for the metadata field in the collection, the field code is returned.
 
 This can take up to 10 minutes to run. Wait until it is complete before moving to analysis.
 
 ### Analyze Your Local SharedShelf API Data dump
 
-The most basic analysis to run is to f
+The most basic analysis to run is an analysis report for all metadata fields in your data dump and how often records with those fields appears. To do this, with your virtual environment activated and in the top level of the sharedshelf-metadata directory on your computer:
 
+```bash
+(venv) $ python scripts/artstor_analysis.py data/output.json
+```
+
+The script should then alert you that it is iterating through the records with this output:
+
+```bash
+(venv) $ python scripts/artstor_analysis.py data/output.json
+1000 records processed
+2000 records processed
+3000 records processed
+4000 records processed
+5000 records processed
+6000 records processed
+7000 records processed
+...
+ARTstor Earliest Date: |===                      |  42093/296363 |  14%
+           ARTstor Id: |                         |   7334/296363 |   2%
+  ARTstor Latest Date: |===                      |  42093/296363 |  14%
+       Accession Date: |                         |   6254/296363 |   2%
+     Accession Number: |========                 |  95043/296363 |  32%
+   Accession Sequence: |                         |    907/296363 |   0%
+     Acquisition Date: |                         |   5780/296363 |   1%
+    Acquisition Notes: |                         |   5780/296363 |   1%
+               Active: |=====                    |  67611/296363 |  22%
+Additional Imaging Notes: |                         |     81/296363 |   0%
+     Additional Notes: |=                        |  14926/296363 |   5%
+Additional Physical Form: |                         |   3443/296363 |   1%
+Adler Notes (transcribed): |                         |   2432/296363 |   0%
+ Administrative Notes: |                         |   3446/296363 |   1%
+Agent_Display.display_value: |==                       |  30871/296363 |  10%
+  Agent_Display.links: |==                       |  30871/296363 |  10%
+      Alternate Title: |                         |   3149/296363 |   1%
+      Analog Creators: |                         |    189/296363 |   0%
+                Angle: |                         |   2234/296363 |   0%
+       Appraisal Date: |                         |    114/296363 |   0%
+       Appraisal Firm: |                         |    247/296363 |   0%
+       Appraisal Note: |                         |      9/296363 |   0%
+             Approval: |                         |   7620/296363 |   2%
+Architect Culture (nationality): |                         |    147/296363 |   0%
+       Architect Date: |                         |    184/296363 |   0%
+Architect Earliest Date: |                         |    147/296363 |   0%
+Architect Latest Date: |                         |    147/296363 |   0%
+Architect.display_value: |                         |    233/296363 |   0%
+      Architect.links: |                         |    233/296363 |   0%
+      ...
+```
+
+What this analysis report offers each field (as mapped to a text label where it exists in that collection's API assets response), then a visual and numberic indicator of how many records have this field in the whole dataset.
