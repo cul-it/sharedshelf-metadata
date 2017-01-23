@@ -1,4 +1,5 @@
 from argparse import ArgumentParser
+import pprint
 import os
 import requests
 import json
@@ -26,60 +27,46 @@ def getCookies(args, parser):
         parser.error("need a valid ArtStor user email and password.")
 
 
-def getCollections(cookies):
+def getCollections(cookies, proj_id):
     """Get + return data for all collections in SharedShelf."""
     projs_start = requests.get(base_url + 'projects', cookies=cookies)
     projs_start.encoding = 'utf8'
-    return(projs_start.json())
+    projs = projs_start.json()
+    colls = {}
+    if proj_id:
+        coll_name = None
+        for proj in projs['items']:
+            if proj['id'] == int(proj_id):
+                coll_id = proj_id
+                coll_name = proj['name']
+                colls[coll_id] = coll_name
+        if not coll_name:
+            print("We couldn't find a collection for that ID. Here's a list: ")
+            print("==========================================================")
+            for proj in projs['items']:
+                print('Collection: %s || ID: %d' % (proj['name'], proj['id']))
+            exit()
+    else:
+        for proj in projs['items']:
+            coll_id = proj['id']
+            coll_name = proj['name']
+            colls[coll_id] = coll_name
+    return(colls)
 
 
-def generateSingleCollDataDump(cookies, coll_id, filename):
+def generateDataDump(cookies, colls, filename):
     total = 0
     output = {}
-    print("Retrieving project %s" % (coll_id))
-    url = base_url + 'projects/' + str(coll_id) + url_rest
-    data_resp = requests.get(url, cookies=cookies)
-    data_resp.encoding = 'utf8'
-    data = data_resp.json()
-    fields_ss = data['metaData']['columns']
-    assets = data['assets']
-    fields = {}
-    for n in range(len(fields_ss)):
-        if publ_re.match(fields_ss[n]['dataIndex']) and 'publishing_status' not in fields:
-            fields['publishing_status'] = ('publishing_status')
-        else:
-            fields[(fields_ss[n]['dataIndex'])] = (fields_ss[n]['header'])
-    for item in range(len(assets)):
-        for field in assets[item]:
-            if field not in fields and field.replace('_multi_s', '_mfcl_lookup') in fields:
-                fields[field] = fields[field.replace('_multi_s', '_mfcl_lookup')] + "_facet"
-            elif field not in fields:
-                fields[field] = field
-    for item in range(len(assets)):
-        record_id = assets[item]['id']
-        output[record_id] = {}
-        total += 1
-        for field in assets[item]:
-            if field in fields:
-                field_label = fields[field]
-                output[record_id][field_label] = assets[item][field]
-            else:
-                output[record_id][field] = assets[item][field]
-                print("MISSING FIELD: " + field + ": " + data['assets'][item][field])
-    with open(args.filename, 'w') as ofile:
-        json.dump(output, ofile)
-    print("Wrote out %d records" % total)
+    for coll_id in colls:
+        print("Retrieving project %s" % colls[coll_id])
 
-
-def generateDataDump(cookies, coll_id, filename):
-    total = 0
-    output = {}
-    for proj in projs_ids:
-        print("Retrieving project %s" % ((projs_ids[proj])))
-        url = base_url + 'projects/' + str(proj) + url_rest
+        # Grab assets data for each unique SharedShelf Collection
+        url = base_url + 'projects/' + str(coll_id) + url_rest
         data_start = requests.get(url, cookies=cookies)
         data_start.encoding = 'utf8'
         data = data_start.json()
+
+        # Grab SharedShelf metadata fields for mapping values to text fields.
         fields_ss = data['metaData']['columns']
         assets = data['assets']
         fields = {}
@@ -88,27 +75,28 @@ def generateDataDump(cookies, coll_id, filename):
                 fields['publishing_status'] = ('publishing_status')
             else:
                 fields[(fields_ss[n]['dataIndex'])] = (fields_ss[n]['header'])
-        for item in range(len(assets)):
-            for field in assets[item]:
+        for n in range(len(assets)):
+            for field in assets[n]:
                 if field not in fields and field.replace('_multi_s', '_mfcl_lookup') in fields:
                     fields[field] = fields[field.replace('_multi_s', '_mfcl_lookup')] + "_facet"
                 elif field not in fields:
                     fields[field] = field
-        for item in range(len(assets)):
-            record_id = assets[item]['id']
+
+        # Grab SharedShelf metadata field values and store in output.
+        for n in range(len(assets)):
+            record_id = assets[n]['id']
             output[record_id] = {}
             total += 1
-            for field in assets[item]:
+            for field in assets[n]:
                 if field in fields:
                     field_label = fields[field]
-                    output[record_id][field_label] = assets[item][field]
+                    output[record_id][field_label] = assets[n][field]
                 else:
-                    output[record_id][field] = assets[item][field]
-                    print("MISSING FIELD: " + field + ": " + data['assets'][item][field])
+                    output[record_id][field] = assets[n][field]
+                    print("MISSING FIELD: " + field + ": " + data['assets'][n][field])
 
-    ofile = open(args.filename, 'w')
-    json.dump(output, ofile)
-    ofile.close()
+    with open(filename, 'w') as ofile:
+        json.dump(output, ofile)
     print("Wrote out %d records" % total)
 
 
@@ -131,29 +119,12 @@ def main():
 
     # Get All Projects/Collections in SharedShelf First.
     print("Writing metadata to %s from SharedShelf." % (args.filename))
-    colls = {}
-    projs = getCollections(cookies)
     if args.coll:
-        coll_name = None
-        for proj in projs['items']:
-            if proj['id'] == int(args.coll):
-                coll_id = args.coll
-                coll_name = proj['name']
-                colls[coll_id] = coll_name
-        if not coll_name:
-            print("We couldn't find a collection for that ID. Here's a list: ")
-            print("==========================================================")
-            for proj in projs['items']:
-                print('Collection: %s || ID: %d' % (proj['name'], proj['id']))
-            exit()
+        spec_id = args.coll
     else:
-        for proj in projs['items']:
-            coll_id = projs['items'][proj]['id']
-            coll_name = projs['items'][proj]['name']
-            colls[coll_id] = coll_name
-    for n in colls:
-        print(n)
-    colls_num = len(colls)
+        spec_id = None
+    colls = getCollections(cookies, spec_id)
+    generateDataDump(cookies, colls, args.filename)
 
 
 if __name__ == "__main__":
