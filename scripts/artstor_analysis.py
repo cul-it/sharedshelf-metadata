@@ -1,8 +1,7 @@
-import sys
+"""Perform some metadata analyses on SharedShelf-harvested metadata."""
 from six import iteritems
 from argparse import ArgumentParser
 import json
-import objectpath
 
 
 class RepoInvestigatorException(Exception):
@@ -25,22 +24,53 @@ class Record:
     def get_elements(self):
         out = []
         try:
-            resp = self.value[self.args.element]
-            if isinstance(resp, list):
-                for n in resp:
-                    out.append(n)
-            elif isinstance(resp, dict):
-                if display_value in resp and links in resp:
-                    heading = resp[display_value] + "(" + resp['links']['source'] + ":" + resp['links']['source_id']
-                    out.append(heading)
-                elif 'publishing_status' in self.args.element:
-                    for key, value in resp:
-                        value = key + ": " + value['status']
-                        out.append(value)
+            elem_q = self.args.element
+            if 'display_value' in elem_q:
+                field_q = elem_q.split('.')[0]
+                subfield_q = elem_q.split('.')[1]
+                if field_q in self.value:
+                    if self.value[field_q] and subfield_q in self.value[field_q]:
+                        data_val = self.value[field_q][subfield_q]
+                    else:
+                        data_val = None
                 else:
-                    out.append(resp)
+                    data_val = None
+            elif 'links' in elem_q:
+                links_out = []
+                field_q = elem_q.split('.')[0]
+                subfield_q = elem_q.split('.')[1]
+                if field_q in self.value:
+                    if self.value[field_q] and subfield_q in self.value[field_q]:
+                        for blob in self.value[field_q][subfield_q]:
+                            blob_id = blob['id']
+                            links_out.append(blob_id)
+                    else:
+                        data_val = None
+                else:
+                    data_val = None
+                data_val = links_out
             else:
-                out.append(resp)
+                data_val = self.value[elem_q]
+
+            if isinstance(data_val, list):
+                for out_val in data_val:
+                    if isinstance(out_val, dict):
+                        print(out_val.keys())
+                    else:
+                        if out_val:
+                            out.append(out_val.encode("UTF-8"))
+            elif isinstance(data_val, dict):
+                if 'publishing_status' in data_val:
+                    for key, value in data_val:
+                        out_val = key + " : " + value['status']
+                        out.append(out_val.encode('UTF-8'))
+                elif 'display_value' in data_val:
+                    out_val = data_val['display_value']
+                    if data_val:
+                        out.append(out_val.encode('UTF-8'))
+            else:
+                if data_val:
+                    out.append(data_val.encode('UTF-8'))
         except KeyError:
             pass
         if len(out) == 0:
@@ -76,12 +106,25 @@ class Record:
 
     def has_element(self):
         """Getting present/not for a specific element."""
-        present = False
-        record = objectpath.Tree(self.elem)
-        response = record.execute(self.args.element)
-        if response:
-            present = True
-            return present
+        present = "False"
+        elem_q = self.args.element
+        if 'display_value' in elem_q:
+            field_q = elem_q.split('.')[0]
+            subfield_q = elem_q.split('.')[1]
+            if field_q in self.value:
+                if self.value[field_q] and subfield_q in self.value[field_q]:
+                    present = True
+        elif 'links' in elem_q:
+            field_q = elem_q.split('.')[0]
+            subfield_q = elem_q.split('.')[1]
+            if field_q in self.value:
+                if self.value[field_q] and subfield_q in self.value[field_q]:
+                    present = True
+        else:
+            if elem_q in self.value:
+                if self.value[elem_q]:
+                    present = True
+        return(present)
 
 
 def collect_stats(stats_aggregate, stats):
@@ -144,7 +187,7 @@ def main():
         "field_info": {}
     }
 
-    parser = ArgumentParser(usage='%(prog)s [options] data_filename.json')
+    parser = ArgumentParser(usage='%(prog)s [options] data_dump.json')
     parser.add_argument("-e", "--element", dest="element",
                         help="element to print to screen")
     parser.add_argument("-i", "--id", action="store_true", dest="id",
@@ -162,9 +205,9 @@ def main():
 
     s = 0
     with open(args.datafile) as data:
-        artstordata = json.load(data)
+        ssdata = json.load(data)
 
-    for key, value in artstordata.items():
+    for key, value in ssdata.items():
         record = Record(value, args)
         record_id = str(value['project_id']) + "_" + str(key)
 
@@ -173,10 +216,10 @@ def main():
                 for i in record.get_elements():
                     if args.id:
                         if i:
-                            print("\t".join([record_id, i]))
+                            print("\t".join([record_id, str(i.decode())]))
                     else:
                         if i:
-                            print(i.encode('utf8'))
+                            print(str(i.decode()))
 
         if args.stats is False and args.present is True:
             print("%s %s" % (record_id, record.has_element()))

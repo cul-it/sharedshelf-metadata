@@ -1,9 +1,10 @@
+"""Harvest metadata mapped to field labels from SharedShelf API."""
 from argparse import ArgumentParser
-import pprint
 import os
 import requests
 import json
 import re
+import csv
 
 base_url = 'http://catalog.sharedshelf.artstor.org/'
 url_rest = '/assets?with_meta=true&limit=5000000'
@@ -100,6 +101,45 @@ def generateDataDump(cookies, colls, filename):
     print("Wrote out %d records" % total)
 
 
+def generateMetadataDump(cookies, colls, filename):
+    output = {}
+    for coll_id in colls:
+        print("Retrieving metadata mapping from project %s" % colls[coll_id])
+
+        # Grab assets data for each unique SharedShelf Collection
+        url = base_url + 'projects/' + str(coll_id) + url_rest
+        data_start = requests.get(url, cookies=cookies)
+        data_start.encoding = 'utf8'
+        data = data_start.json()
+
+        # Grab SharedShelf metadata fields for mapping values to text fields.
+        fields_ss = data['metaData']['columns']
+        for n in range(len(fields_ss)):
+            field_code = fields_ss[n]['dataIndex']
+            field_label = fields_ss[n]['header']
+            if field_label not in output and field_label:
+                output[field_label] = [field_code]
+            elif not field_label:
+                output["No label for: " + field_code] = [field_code]
+            else:
+                if field_code not in output[field_label]:
+                    output[field_label].append(field_code)
+
+    with open(filename, 'w') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(['Field Label', 'Field codes from various collections that map to that Label'])
+        for key, value in output.items():
+            row = [key]
+            codes = None
+            for subval in value:
+                if codes:
+                    codes += subval + " | "
+                else:
+                    codes = subval
+            row.append(codes)
+            writer.writerow(row)
+
+
 def main():
     parser = ArgumentParser()
 
@@ -113,18 +153,25 @@ def main():
                         help="A SharedShelf Collection ID if you only want to \
                               harvest a single SharedShelf Collection. \
                               Optional.")
+    parser.add_argument("-m", "--metadata", dest="metadata", default=False,
+                        action="store_true", help="Return collated metadata \
+                        label to SharedShelf API field codes dictionaries.")
     args = parser.parse_args()
     # Authenticating the User on the SharedShelf API.
     cookies = getCookies(args, parser)
 
     # Get All Projects/Collections in SharedShelf First.
-    print("Writing metadata to %s from SharedShelf." % (args.filename))
-    if args.coll:
-        spec_id = args.coll
+    print("Writing metadata to data/metadata_fields.csv from SharedShelf.")
+    if args.metadata:
+        colls = getCollections(cookies, None)
+        generateMetadataDump(cookies, colls, "metadata_fields.csv")
     else:
-        spec_id = None
-    colls = getCollections(cookies, spec_id)
-    generateDataDump(cookies, colls, args.filename)
+        if args.coll:
+            spec_id = args.coll
+        else:
+            spec_id = None
+        colls = getCollections(cookies, spec_id)
+        generateDataDump(cookies, colls, args.filename)
 
 
 if __name__ == "__main__":
