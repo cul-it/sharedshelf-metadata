@@ -27,6 +27,8 @@ Get pip: See this link: http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Pyth
 Clone this repository (https://github.com/cul-it/sharedshelf-metadata.git) where you would like to keep it (for example, I keep it in a directory called 'Projects'), then in your shell / command line tool, change into the directory for this repository, then create a virtualenv with the Python version you prefer:
 
 ```bash
+$ git clone https://github.com/cul-it/sharedshelf-metadata.git
+ ( output should show materials being copied/cloned to your local computer )
 $ cd ~/Projects/sharedshelf-metadata
 $ virtualenv venv
 ```
