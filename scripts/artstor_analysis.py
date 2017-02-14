@@ -216,10 +216,10 @@ def main():
                 for i in record.get_elements():
                     if args.id:
                         if i:
-                            print("\t".join([record_id, str(i.decode())]))
+                            print("\t".join([record_id, str(i)]))
                     else:
                         if i:
-                            print(str(i.decode()))
+                            print(str(i))
 
         if args.stats is False and args.present is True:
             print("%s %s" % (record_id, record.has_element()))
