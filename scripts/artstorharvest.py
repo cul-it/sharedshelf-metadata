@@ -5,6 +5,7 @@ import requests
 import json
 import re
 import csv
+import errno
 
 base_url = 'http://catalog.sharedshelf.artstor.org/'
 url_rest = '/assets?with_meta=true&limit=5000000'
@@ -96,6 +97,12 @@ def generateDataDump(cookies, colls, filename):
                     output[record_id][field] = assets[n][field]
                     print("MISSING FIELD: " + field + ": " + data['assets'][n][field])
 
+    if not os.path.exists(os.path.dirname(filename)) and os.path.dirname(filename):
+        try:
+            os.makedirs(os.path.dirname(filename))
+        except OSError as exc:
+            if exc.errno != errno.EEXIST:
+                raise
     with open(filename, 'w') as ofile:
         json.dump(output, ofile)
     print("Wrote out %d records" % total)
@@ -125,6 +132,12 @@ def generateMetadataDump(cookies, colls, filename):
                 if field_code not in output[field_label]:
                     output[field_label].append(field_code)
 
+    if not os.path.exists(os.path.dirname(filename)) and os.path.dirname(filename):
+        try:
+            os.makedirs(os.path.dirname(filename))
+        except OSError as exc:
+            if exc.errno != errno.EEXIST:
+                raise
     with open(filename, 'w') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(['Field Label', 'Field codes from various collections that map to that Label'])

@@ -18,6 +18,7 @@ Thumbs.db
 
 # Application specific files
 venv
+venv2
 data
 node_modules
 .sass-cache
