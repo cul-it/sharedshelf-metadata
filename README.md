@@ -1105,5 +1105,4 @@ NB: fields mapped where present in API output for the collection.
 | Tamang - Documents | ID: 3016 |
 | Lab of Ornithology Art Collection_Internal | ID: 2920 |
 | PJ Mode Map Collection_Phase II | ID: 3233 |
-| Charlie Ahearn Archive | ID: 3262 | tests
- tests2 
+| Charlie Ahearn Archive | ID: 3262 | 
