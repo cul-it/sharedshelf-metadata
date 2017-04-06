@@ -27,7 +27,7 @@ Get pip: See this link: http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Pyth
 Clone this repository (https://github.com/cul-it/sharedshelf-metadata.git) where you would like to keep it (for example, I keep it in a directory called 'Projects'), then in your shell / command line tool, change into the directory for this repository, then create a virtualenv with the Python version you prefer:
 
 ```bash
-$ git clone https://github.com/cul-it/sharedshelf-metadata.git
+$ git clone --recursive https://github.com/cul-it/sharedshelf-metadata.git
  ( output should show materials being copied/cloned to your local computer )
 $ cd ~/Projects/sharedshelf-metadata
 $ virtualenv venv
@@ -79,18 +79,19 @@ The response will tell you either if something was installed or if it was alread
 
 With your virtual environment running, you're ready to go.
 
-You only need to run the harvest script as often as you want the most recent data. It can take a while and can take up considerable space on your local machine, so consider re-writing the same file with the most recent data (instead of saving multiple data dumps).
+You only need to run the harvest script as often as you want the most recent data. It can take a while and can take up considerable space on your local machine, so consider re-writing the same file with the most recent data (instead of saving multiple data dumps). You'll also want to make sure you grab the latest code changes each time before starting.
 
 From the top-level of the sharedshelf-metadata directory on your computer, run:
 
 ```bash
-(venv) $ python scripts/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
+(venv) $ git submodule update --recursive --remote
+(venv) $ python metadataQA/harvest/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
 ```
 
 Fill this is with your email, your SharedShelf password, and the place where you'd like to store the data dump locally (here, it is "data/output.json"). The response should be like the following:
 
 ```bash
-(venv) $ python scripts/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
+(venv) $ python metadataQA/harvest/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
 Writing records to data/output.json from SharedShelf.
 Retrieving project Obama Visual Iconography
 Retrieving project Political Americana

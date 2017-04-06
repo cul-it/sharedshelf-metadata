@@ -58,19 +58,19 @@ class Record:
                         print(out_val.keys())
                     else:
                         if out_val:
-                            out.append(out_val.encode("UTF-8"))
+                            out.append(out_val)
             elif isinstance(data_val, dict):
                 if 'publishing_status' in data_val:
                     for key, value in data_val:
                         out_val = key + " : " + value['status']
-                        out.append(out_val.encode('UTF-8'))
+                        out.append(out_val)
                 elif 'display_value' in data_val:
                     out_val = data_val['display_value']
                     if data_val:
-                        out.append(out_val.encode('UTF-8'))
+                        out.append(out_val)
             else:
                 if data_val:
-                    out.append(data_val.encode('UTF-8'))
+                    out.append(data_val)
         except KeyError:
             pass
         if len(out) == 0:
@@ -88,19 +88,20 @@ class Record:
                         for field3, value3 in iteritems(value2):
                             if isinstance(value3, dict):
                                 for field4, value4 in iteritems(value3):
-                                    stats.setdefault(field + "." + field2 + "." + field3 + "." + field4,0)
-                                    stats[field + "." + field2 + "." + field3 + "." + field4] += 1
+                                    if value4 and value4 is not []:
+                                        stats.setdefault(field + "." + field2 + "." + field3 + "." + field4, 0)
+                                        stats[field + "." + field2 + "." + field3 + "." + field4] += 1
                             else:
-                                if field and field2 and field3:
-                                    stats.setdefault(field + "." + field2 + "." + field3,0)
+                                if field and field2 and field3 and value3 is not []:
+                                    stats.setdefault(field + "." + field2 + "." + field3, 0)
                                     stats[field + "." + field2 + "." + field3] += 1
                     else:
-                        if field and field2:
-                            stats.setdefault(field + "." + field2,0)
+                        if field and field2 and value2 is not []:
+                            stats.setdefault(field + "." + field2, 0)
                             stats[field + "." + field2] += 1
             else:
-                if field:
-                    stats.setdefault(field,0)
+                if field and value is not []:
+                    stats.setdefault(field, 0)
                     stats[field] += 1
         return stats
 
