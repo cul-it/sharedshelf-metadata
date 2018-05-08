@@ -91,7 +91,7 @@ From the top-level of the sharedshelf-metadata directory on your computer, run:
 Fill this is with your email, your SharedShelf password, and the place where you'd like to store the data dump locally (here, it is "data/output.json"). The response should be like the following:
 
 ```bash
-(venv) $ python metadataQA/harvest/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
+(venv) $ python metadataQA/harvest/harvestSharedShelf.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
 Writing records to data/output.json from SharedShelf.
 Retrieving project Obama Visual Iconography
 Retrieving project Political Americana
