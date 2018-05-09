@@ -22,3 +22,4 @@ venv2
 data
 node_modules
 .sass-cachetest
+.vscode/
