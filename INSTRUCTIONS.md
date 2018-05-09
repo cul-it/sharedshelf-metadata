@@ -85,7 +85,7 @@ From the top-level of the sharedshelf-metadata directory on your computer, run:
 
 ```bash
 (venv) $ git submodule update --recursive --remote
-(venv) $ python metadataQA/harvest/artstorharvest.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
+(venv) $ python metadataQA/harvest/harvestSharedShelf.py -e cmh329@cornell.edu -p yourPassword -o data/output.json
 ```
 
 Fill this is with your email, your SharedShelf password, and the place where you'd like to store the data dump locally (here, it is "data/output.json"). The response should be like the following:
