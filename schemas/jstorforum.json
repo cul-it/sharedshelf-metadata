@@ -103,7 +103,7 @@
         "Subject": {"type": "object"},
         "Thumbnail": {
             "type": "string",
-            "patter": "d+"
+            "pattern": "d+"
         },
         "Title": {"type": "string"},
         "Title_Language": {"type": "object"},
