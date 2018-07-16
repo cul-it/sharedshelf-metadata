@@ -1,0 +1,120 @@
+{
+    "$id": "sharedshelf_map_items",
+    "type": "object",
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "required": [
+        "Source",
+        "Identifier",
+        "Collection Level Bib",
+        "Rights",
+        "Title",
+        "Work Type"
+    ],
+    "dependencies": {
+        "Agent": {"required": ["Agent_Role"]},
+        "Date": {"required": ["Date_Type"]},
+        "Identifier1": {"required": ["Identifier1_Type"]},
+        "Legacy_Value": {"required": ["Legacy_Label"]},
+        "Measurement": {"required": [
+            "Measurement_Unit",
+            "Measurement_Dimension"
+        ]},
+        "Title_Language": {"required": ["Title"]}
+    },
+    "properties": {
+        "Collection Website": {
+            "type": "string",
+            "format": "url"
+        },
+        "Collection Level Bib": {"type": "integer"},
+
+        "Address": {"type": "string"},
+        "Agent": {"type": "object"},
+        "Agent_Role": {"type": "object"},
+        "Alternate_Title": {"type": "string"},
+        "Annotation": {"type": "string"},
+        "Archival_Collection": {"type": "string"},
+        "Box": {"type": "integer"},
+        "Condition": {"type": "string"},
+        "Country": {"type": "string"},
+        "Culture": {"type": "object"},
+        "Date": {"type": "string"},
+        "Date_Type": {"type": "object"},
+        "DCMI Type": {"type": "object"},
+        "Description": {"type": "string"},
+        "Disable Download": {
+            "type": "integer",
+            "enum": [
+                1,
+                0
+            ]
+        },
+        "Earliest Date": {
+            "type": "integer",
+            "format": "date"
+        },
+        "Exhibition": {"type": "string"},
+        "Filename": {"type": "string"},
+        "Folder": {"type": "string"},
+        "Identifier1": {"type": "string"},
+        "Identifier1_Type": {"type": "string"},
+        "Image View Description": {"type": "string"},
+        "Image View Type": {"type": "string"},
+        "Inscription": {"type": "string"},
+        "isTranslatedAs": {"type": "string"},
+        "isTranslationOf": {"type": "string"},
+        "Kaltura ID": {"type": "string"},
+        "Kaltura Playlist": {"type": "string"},
+        "Keywords": {"type": "string"},
+        "Language": {"type": "string"},
+        "Latitude": {
+            "type": "string",
+            "pattern": "\\d+\\.\\d+"
+        },
+        "Legacy_Label": {"type": "string"},
+        "Legacy_Value": {"type": "string"},
+        "Location": {"type": "string"},
+        "Longitude": {
+            "type": "string",
+            "pattern": "\\d+\\.\\d+"
+        },
+        "Materials/Techniques": {"type": "object"},
+        "Measurement": {"type": "string"},
+        "Meaurement_Dimension": {"type": "object"},
+        "Meaurement_Unit": {"type": "object"},
+        "Notes": {"type": "string"},
+        "OCR Text": {"type": "string"},
+        "PreservationCollectionID": {"type": "string"},
+        "PreservationSystem": {"type": "string"},
+        "Provenance": {"type": "string"},
+        "Publish to Portal": {"type": "boolean"},
+        "References": {"type": "string"},
+        "Related Work": {"type": "string"},
+        "Relationships": {"type": "string"},
+        "Repository": {"type": "string"},
+        "Rights": {"type": "string"},
+        "Set Title": {"type": "string"},
+        "Site": {"type": "object"},
+        "SSID": {"type": "string"},
+        "Source": {"type": "string"},
+        "Species": {"type": "string"},
+        "Style/Period": {"type": "object"},
+        "Subject": {"type": "object"},
+        "Thumbnail": {
+            "type": "string",
+            "patter": "d+"
+        },
+        "Title": {"type": "string"},
+        "Title_Language": {"type": "object"},
+        "Transcription": {"type": "string"},
+        "Venue": {"type": "string"},
+        "Volume/Issue": {"type": "string"},
+        "Work Sequence": {"type": "string"},
+        "Work Type": {
+            "id": "Work Type",
+            "type": "object",
+            "required": ["display_value"]
+        }
+    }
+}

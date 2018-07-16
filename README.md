@@ -2,11 +2,43 @@
 
 ## Overview
 
-Basically, the analysis scripts here run by first harvesting a full data dump of Artstor data, across collections, from the SharedShelf API. This is stored locally. Then, the analyses occur by running the analysis scripts (with some options available for type of analysis) on that data dump. This generates reports across all collections unless explicitly set in the analysis options.
+This repository contains components for two methods of working with JSTOR Forum metadata:
 
-To speed up this process, we're working on a hosted version of these analysis scripts that copies the data dumps to a database that is then queried (in place of pulling full json data onto your local system).
+* documentation of the Forum schema in a json schema which can be used to validate Forum data
+* the metadataQA harvest and analysis scripts
 
-## Workflow
+
+## Workflow: json schema data validation
+
+* Install Node.js: https://nodejs.org/en/
+* Install a validator. We're using: https://www.npmjs.com/package/ajv and https://www.npmjs.com/package/ajv-cli so doing
+``` 
+$ npm install ajv
+
+$ npm install -g ajv-cli
+```
+should work. If you plan to work with this a lot, reviewing the ajv documentation is useful to see what out of the box options you have.
+
+* Install the SharedShelf harvest script as described below
+
+* Run the harvest script with a collection number and the singles option:
+
+```
+python metadataQA/harvest/harvestSharedShelf.py -e yourNetID@cornell.edu -p yourPassword -c collectionNumber --singles
+```
+* Run the validator, using the collection number in the file path 
+```
+ajv validate -s schemas/jstorforum.json -d "collectionNumber/*.json" --all-errors --errors=text
+```
+You should be rewarded with either a message validating your data or detailing its errors.
+
+### To update the schema
+To update the validation schema, go into the schemas folder and modify jstorforum.json. You may be particularly interested in tightening the validation keywords. Information on keywords is available here: http://json-schema.org/latest/json-schema-validation.html#rfc.section.6
+
+Feel free to open issues for the schema if you'd like help updating it.
+
+
+## Workflow: metadataQA
 
 ### Check Python, Pip, VirtualEnv Installation/Versions
 
