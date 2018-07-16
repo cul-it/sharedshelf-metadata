@@ -356,4 +356,3 @@ Or combine all of the above for many different types of queries on the metadata.
 ...
 ```
 
-Note, there will probably be some errors that arise as one goes through all the query possibilities - just let Christina know and she'll try to update these scripts.
