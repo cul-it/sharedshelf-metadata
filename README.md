@@ -28,7 +28,7 @@ python metadataQA/harvest/harvestSharedShelf.py -e yourNetID@cornell.edu -p your
 ```
 * Run the validator, using the collection number in the file path 
 ```
-ajv validate -s schemas/jstorforum.json -d "collectionNumber/*.json" --all-errors --errors=text
+ajv validate -s schemas/jstorforum.json -d "data/collectionNumber/*.json" --all-errors --errors=text
 ```
 You should be rewarded with either a message validating your data or detailing its errors.
 

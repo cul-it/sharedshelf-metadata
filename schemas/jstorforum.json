@@ -27,7 +27,10 @@
             "type": "string",
             "format": "url"
         },
-        "Collection Level Bib": {"type": "integer"},
+        "Collection Level Bib": {
+            "type": "string",
+            "pattern": "\\d+"
+        },
 
         "Address": {"type": "string"},
         "Agent": {"type": "object"},
@@ -37,7 +40,7 @@
         "Archival_Collection": {"type": "string"},
         "Box": {"type": "integer"},
         "Condition": {"type": "string"},
-        "Country": {"type": "string"},
+        "Country": {"type": "object"},
         "Culture": {"type": "object"},
         "Date": {"type": "string"},
         "Date_Type": {"type": "object"},
@@ -60,21 +63,21 @@
         "Identifier1": {"type": "string"},
         "Identifier1_Type": {"type": "string"},
         "Image View Description": {"type": "string"},
-        "Image View Type": {"type": "string"},
+        "Image View Type": {"type": "object"},
         "Inscription": {"type": "string"},
         "isTranslatedAs": {"type": "string"},
         "isTranslationOf": {"type": "string"},
         "Kaltura ID": {"type": "string"},
         "Kaltura Playlist": {"type": "string"},
         "Keywords": {"type": "string"},
-        "Language": {"type": "string"},
+        "Language": {"type": "object"},
         "Latitude": {
             "type": "string",
             "pattern": "\\d+\\.\\d+"
         },
         "Legacy_Label": {"type": "string"},
         "Legacy_Value": {"type": "string"},
-        "Location": {"type": "string"},
+        "Location": {"type": "object"},
         "Longitude": {
             "type": "string",
             "pattern": "\\d+\\.\\d+"
@@ -88,7 +91,7 @@
         "PreservationCollectionID": {"type": "string"},
         "PreservationSystem": {"type": "string"},
         "Provenance": {"type": "string"},
-        "Publish to Portal": {"type": "boolean"},
+        "Publish to Portal": {"type": "string"},
         "References": {"type": "string"},
         "Related Work": {"type": "string"},
         "Relationships": {"type": "string"},
@@ -96,21 +99,21 @@
         "Rights": {"type": "string"},
         "Set Title": {"type": "string"},
         "Site": {"type": "object"},
-        "SSID": {"type": "string"},
+        "SSID": {"type": "integer"},
         "Source": {"type": "string"},
         "Species": {"type": "string"},
         "Style/Period": {"type": "object"},
         "Subject": {"type": "object"},
         "Thumbnail": {
             "type": "string",
-            "pattern": "d+"
+            "pattern": "\\d+"
         },
         "Title": {"type": "string"},
         "Title_Language": {"type": "object"},
         "Transcription": {"type": "string"},
         "Venue": {"type": "string"},
         "Volume/Issue": {"type": "string"},
-        "Work Sequence": {"type": "string"},
+        "Work Sequence": {"type": "integer"},
         "Work Type": {
             "id": "Work Type",
             "type": "object",
